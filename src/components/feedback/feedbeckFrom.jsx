@@ -30,6 +30,9 @@ class Fedback extends Component {
   }
 
   render() {
+    const total = this.countTotalFeedback();
+    const totalPersent = this.countPositiveFeedbackPercentage();
+
     return (
       <div className="container">
         <h1>Please leave feedback</h1>
@@ -47,16 +50,8 @@ class Fedback extends Component {
           <li>Good: {this.state.good}</li>
           <li>Neutral: {this.state.neutral}</li>
           <li>Bad: {this.state.bad}</li>
-          <li>
-            {this.countTotalFeedback() > 0
-              ? `Total: ${this.countTotalFeedback()}`
-              : ''}
-          </li>
-          <li>
-            {this.countTotalFeedback() > 0
-              ? `Positive feedback: ${this.countPositiveFeedbackPercentage()}`
-              : ''}
-          </li>
+          <li>{total > 0 && `Total: ${total}`}</li>
+          <li>{totalPersent > 0 && `Positive feedback: ${totalPersent}%`}</li>
         </ul>
       </div>
     );
