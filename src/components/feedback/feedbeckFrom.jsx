@@ -4,7 +4,7 @@ import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
 import Section from 'components/section/Section';
 import Notification from 'components/Notification/Notification';
 
-class Fedback extends Component {
+export class Fedback extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -59,4 +59,3 @@ class Fedback extends Component {
     );
   }
 }
-export default Fedback;
