@@ -1,4 +1,8 @@
 import { Component } from 'react';
+import Statistics from 'components/statistics/Statistics';
+import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
+import Section from 'components/section/Section';
+import Notification from 'components/Notification/Notification';
 
 class Fedback extends Component {
   state = {
@@ -35,24 +39,22 @@ class Fedback extends Component {
 
     return (
       <div className="container">
-        <h1>Please leave feedback</h1>
-        <button type="button" data-name="good" onClick={this.addFeedback}>
-          Good
-        </button>
-        <button type="button" data-name="neutral" onClick={this.addFeedback}>
-          Neutral
-        </button>
-        <button type="button" data-name="bad" onClick={this.addFeedback}>
-          Bad
-        </button>
-        <h2>Statistics</h2>
-        <ul>
-          <li>Good: {this.state.good}</li>
-          <li>Neutral: {this.state.neutral}</li>
-          <li>Bad: {this.state.bad}</li>
-          <li>{total > 0 && `Total: ${total}`}</li>
-          <li>{totalPersent > 0 && `Positive feedback: ${totalPersent}%`}</li>
-        </ul>
+        <Section title="Please leave feedback">
+          <FeedbackOptions onLeaveFeedback={this.addFeedback} />
+        </Section>
+        <Section title="Statistics">
+          {total === 0 ? (
+            <Notification messege="There is no feedback" />
+          ) : (
+            <Statistics
+              good={this.state.good}
+              neutral={this.state.neutral}
+              bad={this.state.bad}
+              total={total}
+              positivePercentage={totalPersent}
+            />
+          )}
+        </Section>
       </div>
     );
   }

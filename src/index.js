@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
-import Fedback  from './components/feedback/feedbeckFrom';
+import Fedback  from './components/feedback/FeedbeckFrom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
