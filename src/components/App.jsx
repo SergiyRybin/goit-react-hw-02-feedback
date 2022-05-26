@@ -1,9 +1,10 @@
 import Fedback from './feedback/Fedback';
 
-export const App = () => {
+ const App = () => {
   return (
     <>
       <Fedback />
     </>
   );
 };
+export default App
