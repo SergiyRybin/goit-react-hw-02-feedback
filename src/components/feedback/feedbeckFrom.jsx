@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import Statistics from 'components/statistics/Statistics';
-import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
+import FeedbackOptions from 'components/feedbackOptions/FeedbackOptions';
 import Section from 'components/section/Section';
-import Notification from 'components/Notification/Notification';
+import Notification from 'components/notification/Notification';
 
 export class Fedback extends Component {
   state = {
