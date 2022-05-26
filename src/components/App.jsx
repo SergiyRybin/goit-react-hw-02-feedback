@@ -1,4 +1,4 @@
-import Fedback from './feedback/Fedback';
+import Fedback from './Feedback/Fedback';
 
  const App = () => {
   return (
