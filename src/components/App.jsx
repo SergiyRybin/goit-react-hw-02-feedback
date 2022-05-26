@@ -1,4 +1,4 @@
-import Fedback from 'src/components/Feedback/Fedback';
+import Fedback from '../feedback/Fedback';
 
  const App = () => {
   return (
