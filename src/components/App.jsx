@@ -1,9 +1,9 @@
-import { Fedback } from "./feedback/FeedbeckFrom";
+import Fedback from './feedback/Fedback';
 
 export const App = () => {
   return (
     <>
-     <Fedback />
+      <Fedback />
     </>
   );
 };
