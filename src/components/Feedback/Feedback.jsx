@@ -1,7 +1,6 @@
 import { Component } from 'react';
 
-
-import Statistics from '../Statistics/Statistics';
+import Statistics from '../Stat/Stat';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 import Section from '../Section/Section';
 import Notification from '../Notification/Notification';
@@ -36,7 +35,6 @@ class Feedback extends Component {
   }
 
   render() {
-    
     const total = this.countTotalFeedback();
     const totalPersent = this.countPositiveFeedbackPercentage();
 

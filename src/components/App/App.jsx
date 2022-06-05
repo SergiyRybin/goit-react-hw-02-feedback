@@ -1,10 +1,10 @@
-import Feedback from "../Feedback/Feedback";
+import Feedback from '../Feedback/Feedback';
 
- const App = () => {
+const App = () => {
   return (
     <>
       <Feedback />
     </>
   );
 };
-export default App
+export default App;
