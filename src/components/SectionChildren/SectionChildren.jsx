@@ -6,10 +6,12 @@ const Section = ({ title, children }) => (
     {title === 'Statistics' ? <h2>{title}</h2> : <h1>{title}</h1>}
     {children}
   </>
+
 );
 
 Section.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired
 };
 
 
