@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 import Statistics from '../Stat/Stat';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-import Section from '../Section/Section';
+import Section from '../SectionChildren/SectionChildren';
 import Notification from '../Notification/Notification';
 
 class Feedback extends Component {
