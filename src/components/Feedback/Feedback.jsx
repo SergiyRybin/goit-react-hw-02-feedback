@@ -1,8 +1,10 @@
 import { Component } from 'react';
-import Statistics from '../Statistics/Statistics';
-import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-import Section from '../Section/Section';
-import Notification from '../Notification/Notification';
+
+
+import Statistics from 'components/Statistics/Statistics';
+import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
+import Section from 'components/Section/Section';
+import Notification from 'components/Notification/Notification';
 
 class Feedback extends Component {
   state = {
