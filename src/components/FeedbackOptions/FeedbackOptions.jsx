@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const FeedbackOptions = ({ onLeaveFeedback }) => (
+  
   <>
     <button type="button" data-name="good" onClick={onLeaveFeedback}>
       Good
