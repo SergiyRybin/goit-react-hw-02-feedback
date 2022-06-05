@@ -34,6 +34,7 @@ class Feedback extends Component {
   }
 
   render() {
+    
     const total = this.countTotalFeedback();
     const totalPersent = this.countPositiveFeedbackPercentage();
 
