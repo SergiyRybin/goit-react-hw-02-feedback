@@ -13,8 +13,7 @@ class Feedback extends Component {
   };
 
   addFeedback = e => {
-    const targetName = e.target.dataset.name;
-
+    const targetName = e.target.dataset.name.toLowerCase();
     this.setState(pre => {
       return {
         [targetName]: pre[targetName] + 1,
@@ -27,6 +26,7 @@ class Feedback extends Component {
     let total = good + neutral + bad;
     return total;
   }
+  
   countPositiveFeedbackPercentage() {
     const { good, neutral, bad } = this.state;
     const total = good + neutral + bad;
