@@ -1,9 +1,9 @@
-import Fedback from "components/Feedback/Fedback";
+import Feedback from "components/Feedback/Fedback";
 
  const App = () => {
   return (
     <>
-      <Fedback />
+      <Feedback />
     </>
   );
 };
